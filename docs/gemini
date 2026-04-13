@@ -1,0 +1,11 @@
+#!/bin/bash
+set -e
+echo "Installing Gemini CLI..."
+if ! command -v npm &> /dev/null
+then
+    echo "Error: npm is not installed. Please install Node.js/npm first."
+    exit 1
+fi
+echo "Running: sudo npm install -g @google/gemini-cli"
+sudo npm install -g @google/gemini-cli
+echo "Gemini CLI installed successfully!"

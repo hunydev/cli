@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI CLI Installer - cli.huny.dev</title>
+    <style>
+        :root {
+            --bg: #0f172a;
+            --text: #f8fafc;
+            --accent: #38bdf8;
+            --card-bg: #1e293b;
+            --code-bg: #000;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            line-height: 1.6;
+        }
+        h1 {
+            text-align: center;
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+        }
+        p.subtitle {
+            text-align: center;
+            color: #94a3b8;
+            margin-bottom: 3rem;
+        }
+        .grid {
+            display: grid;
+            gap: 1.5rem;
+        }
+        .card {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 1px solid #334155;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-2px);
+            border-color: var(--accent);
+        }
+        .card h2 {
+            margin-top: 0;
+            font-size: 1.25rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .command-box {
+            background: var(--code-bg);
+            padding: 1rem;
+            border-radius: 8px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+            font-size: 0.9rem;
+            position: relative;
+            overflow-x: auto;
+            border: 1px solid #1e293b;
+        }
+        .command-box code {
+            color: #e2e8f0;
+        }
+        footer {
+            margin-top: 4rem;
+            text-align: center;
+            color: #64748b;
+            font-size: 0.875rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>CLI Installer</h1>
+    <p class="subtitle">Quickly install AI CLI tools in your VM environment</p>
+
+    <div class="grid">
+        <div class="card">
+            <h2>Claude Code</h2>
+            <div class="command-box">
+                <code>curl -fsSL https://cli.huny.dev/claude | bash</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>GitHub Copilot</h2>
+            <div class="command-box">
+                <code>curl -fsSL https://cli.huny.dev/copilot | bash</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Gemini CLI</h2>
+            <div class="command-box">
+                <code>curl -fsSL https://cli.huny.dev/gemini | bash</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>OpenAI Codex</h2>
+            <div class="command-box">
+                <code>curl -fsSL https://cli.huny.dev/codex | bash</code>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>GitHub CLI (gh)</h2>
+            <div class="command-box">
+                <code>curl -fsSL https://cli.huny.dev/gh | bash</code>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        Hosted on GitHub Pages • cli.huny.dev
+    </footer>
+</body>
+</html>

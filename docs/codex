@@ -1,0 +1,11 @@
+#!/bin/bash
+set -e
+echo "Installing OpenAI Codex CLI..."
+if ! command -v npm &> /dev/null
+then
+    echo "Error: npm is not installed. Please install Node.js/npm first."
+    exit 1
+fi
+echo "Running: sudo npm install -g @openai/codex"
+sudo npm install -g @openai/codex
+echo "OpenAI Codex CLI installed successfully!"

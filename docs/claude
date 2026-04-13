@@ -1,0 +1,4 @@
+#!/bin/bash
+set -e
+echo "Installing Claude Code..."
+curl -fsSL https://claude.ai/install.sh | bash
